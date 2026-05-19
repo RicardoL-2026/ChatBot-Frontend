@@ -1,0 +1,38 @@
+/*
+  Breakpoints (mobile-first):
+  - mobile:  default, < 640px
+  - tablet:  640px  (sm)
+  - laptop:  1024px (lg)
+  - large:   1440px (xl)
+*/
+
+:root {
+  --bp-tablet: 640px;
+  --bp-laptop: 1024px;
+  --bp-large: 1440px;
+
+  --sidebar-width-mobile: 280px;
+  --sidebar-width-tablet: 260px;
+  --sidebar-width-laptop: 280px;
+  --sidebar-width-large: 300px;
+
+  --sidebar-width: var(--sidebar-width-mobile);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --sidebar-width: var(--sidebar-width-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --sidebar-width: var(--sidebar-width-laptop);
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --sidebar-width: var(--sidebar-width-large);
+  }
+}
