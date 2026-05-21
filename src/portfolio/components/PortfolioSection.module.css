@@ -1,0 +1,71 @@
+.section {
+  padding: 1rem 1.25rem 2rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.muted {
+  color: var(--sol-base01);
+  font-size: 0.8rem;
+}
+
+.badge {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+  background: var(--sol-cyan);
+  color: var(--sol-base03);
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.content :global(h1) {
+  color: var(--sol-blue);
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+}
+
+.content :global(h2) {
+  color: var(--sol-cyan);
+  font-size: 1.1rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.content :global(h3) {
+  color: var(--sol-violet);
+  font-size: 1rem;
+  margin: 1rem 0 0.35rem;
+}
+
+.content :global(p) {
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.content :global(ul) {
+  margin: 0.5rem 0 0.5rem 1.25rem;
+  padding: 0;
+}
+
+.content :global(li) {
+  margin: 0.35rem 0;
+}
+
+.content :global(strong) {
+  color: var(--sol-yellow);
+}
+
+.content :global(em) {
+  color: var(--sol-base1);
+}

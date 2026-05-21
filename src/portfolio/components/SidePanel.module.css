@@ -1,0 +1,20 @@
+.panel {
+  width: var(--side-panel-width);
+  min-width: var(--side-panel-width);
+  max-width: 100%;
+  background: var(--bg-sidebar);
+  border-right: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 639px) {
+  .panel {
+    width: 100%;
+    min-width: unset;
+    max-height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}

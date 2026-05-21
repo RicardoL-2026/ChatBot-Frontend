@@ -1,5 +1,5 @@
-import AppRouter from './router/AppRouter'
+import PortfolioLayout from './portfolio/PortfolioLayout'
 
 export default function App() {
-  return <AppRouter />
+  return <PortfolioLayout />
 }

@@ -1,0 +1,30 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: var(--status-bar-height);
+  padding: 0 0.75rem;
+  background: var(--accent);
+  color: var(--sol-base03);
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
+.item {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .item {
+    display: inline;
+  }
+}
+
+.path {
+  margin-left: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 50%;
+}

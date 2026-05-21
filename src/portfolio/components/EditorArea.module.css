@@ -1,0 +1,64 @@
+.editor {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  min-height: 0;
+}
+
+.lineNumbers {
+  display: none;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  text-align: right;
+  color: var(--sol-base01);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  user-select: none;
+  border-right: 1px solid var(--border);
+  background: var(--bg-editor);
+}
+
+.lineNumbers span {
+  display: block;
+  min-height: 1.6em;
+}
+
+@media (min-width: 1024px) {
+  .lineNumbers {
+    display: flex;
+  }
+}
+
+.codeArea {
+  flex: 1;
+  overflow: auto;
+  background: var(--bg-editor);
+}
+
+.welcome {
+  padding: 2rem 1.5rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.welcomeTitle {
+  font-size: 1.25rem;
+  color: var(--sol-blue);
+  margin: 0 0 1rem;
+}
+
+.welcome ul {
+  margin: 1rem 0 0 1.25rem;
+  color: var(--text-secondary);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}

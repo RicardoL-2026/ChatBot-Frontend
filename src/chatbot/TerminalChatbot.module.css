@@ -1,0 +1,113 @@
+.terminal {
+  height: var(--terminal-height);
+  min-height: var(--terminal-height);
+  background: #0a0a0a;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  background: var(--bg-panel);
+  color: var(--text-secondary);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+.badge {
+  margin-left: auto;
+  font-size: 0.65rem;
+  color: var(--sol-green);
+}
+
+.body {
+  flex: 1;
+  overflow: auto;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  color: #a8b5b2;
+}
+
+.prompt {
+  margin: 0 0 0.35rem;
+}
+
+.user {
+  color: var(--sol-green);
+}
+
+.at,
+.host {
+  color: var(--sol-cyan);
+}
+
+.path {
+  color: var(--sol-blue);
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+  color: var(--sol-base1);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.output {
+  margin: 0 0 0.5rem;
+  color: var(--sol-base0);
+}
+
+.output code {
+  color: var(--sol-yellow);
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.prefix {
+  color: var(--sol-green);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--sol-base1);
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@media (max-width: 639px) {
+  .terminal {
+    --terminal-height: 140px;
+    min-height: 140px;
+  }
+}

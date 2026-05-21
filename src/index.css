@@ -1,41 +1,5 @@
+@import './styles/solarized.css';
 @import './styles/breakpoints.css';
-
-:root {
-  --color-bg: #f8fafc;
-  --color-surface: #f1f5f9;
-  --color-panel: #ffffff;
-  --color-border: #e2e8f0;
-  --color-text: #0f172a;
-  --color-text-muted: #64748b;
-  --color-primary: #d04a02;
-  --color-primary-hover: #b84202;
-  --color-primary-alpha: rgba(208, 74, 2, 0.12);
-  --color-danger: #dc2626;
-
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 2.5rem;
-
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
-  --shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.12);
-
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 *,
 *::before,
@@ -43,27 +7,40 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100dvh;
-}
-
+html,
+body,
 #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  min-height: 100dvh;
 }
 
-a {
-  color: var(--color-primary);
+body {
+  font-family: var(--font-ui);
+  background: var(--bg-editor);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
 }
 
 button {
   font-family: inherit;
 }
 
-input,
-textarea,
-button {
-  font-family: inherit;
+code {
+  font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sol-base01);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-sidebar);
 }

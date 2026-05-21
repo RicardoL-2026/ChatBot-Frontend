@@ -1,0 +1,60 @@
+.shell {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-editor);
+  color: var(--text-primary);
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.mainColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.editorRow {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.editorStack {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  background: var(--bg-editor);
+}
+
+/* Mobile: stack activity bar on top, column layout */
+@media (max-width: 639px) {
+  .workspace {
+    flex-direction: column;
+  }
+
+  .editorRow {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .editorRow {
+    flex-direction: row;
+  }
+}
+
+/* Laptop & monitor use default row layout */

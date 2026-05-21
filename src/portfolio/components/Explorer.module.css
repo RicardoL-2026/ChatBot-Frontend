@@ -1,0 +1,51 @@
+.explorer {
+  height: 100%;
+  overflow: auto;
+  font-size: 0.82rem;
+}
+
+.header {
+  padding: 0.6rem 0.75rem 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.tree {
+  padding-bottom: 0.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: inherit;
+  text-align: left;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  min-height: 22px;
+}
+
+.row:hover,
+.file:hover {
+  background: var(--selection);
+}
+
+.file {
+  padding-left: 28px;
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--text-secondary);
+}
+
+.folderGroup {
+  width: 100%;
+}

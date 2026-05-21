@@ -1,0 +1,36 @@
+:root {
+  /* Solarized Dark (VS Code) */
+  --sol-base03: #002b36;
+  --sol-base02: #073642;
+  --sol-base01: #586e75;
+  --sol-base00: #657b83;
+  --sol-base0: #839496;
+  --sol-base1: #93a1a1;
+  --sol-base2: #eee8d5;
+  --sol-base3: #fdf6e3;
+  --sol-yellow: #b58900;
+  --sol-orange: #cb4b16;
+  --sol-red: #dc322f;
+  --sol-magenta: #d33682;
+  --sol-violet: #6c71c4;
+  --sol-blue: #268bd2;
+  --sol-cyan: #2aa198;
+  --sol-green: #859900;
+
+  --bg-editor: var(--sol-base03);
+  --bg-sidebar: var(--sol-base02);
+  --bg-activity-bar: #00212b;
+  --bg-title-bar: var(--sol-base02);
+  --bg-panel: var(--sol-base02);
+  --bg-tab-active: var(--sol-base03);
+  --bg-tab-inactive: var(--sol-base02);
+  --border: #0a3a47;
+  --text-primary: var(--sol-base0);
+  --text-secondary: var(--sol-base01);
+  --text-muted: var(--sol-base00);
+  --accent: var(--sol-blue);
+  --accent-hover: #3a9ee5;
+  --selection: rgba(38, 139, 210, 0.25);
+  --font-mono: 'Consolas', 'Courier New', 'Fira Code', monospace;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}

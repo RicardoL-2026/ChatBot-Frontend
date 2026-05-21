@@ -1,38 +1,39 @@
-/*
-  Breakpoints (mobile-first):
-  - mobile:  default, < 640px
-  - tablet:  640px  (sm)
-  - laptop:  1024px (lg)
-  - large:   1440px (xl)
-*/
-
+/* Mobile-first breakpoints */
 :root {
   --bp-tablet: 640px;
   --bp-laptop: 1024px;
-  --bp-large: 1440px;
+  --bp-monitor: 1440px;
 
-  --sidebar-width-mobile: 280px;
-  --sidebar-width-tablet: 260px;
-  --sidebar-width-laptop: 280px;
-  --sidebar-width-large: 300px;
-
-  --sidebar-width: var(--sidebar-width-mobile);
+  --activity-bar-width: 48px;
+  --side-panel-width: 260px;
+  --terminal-height: 180px;
+  --title-bar-height: 35px;
+  --tab-bar-height: 36px;
+  --status-bar-height: 22px;
 }
 
+/* Mobile (default, < 640px) */
 @media (min-width: 640px) {
   :root {
-    --sidebar-width: var(--sidebar-width-tablet);
+    --side-panel-width: 220px;
+    --terminal-height: 200px;
   }
 }
 
+/* Tablet (640px – 1023px) — uses vars above */
+
+/* Laptop (1024px – 1439px) */
 @media (min-width: 1024px) {
   :root {
-    --sidebar-width: var(--sidebar-width-laptop);
+    --side-panel-width: 260px;
+    --terminal-height: 220px;
   }
 }
 
+/* Monitor (≥ 1440px) */
 @media (min-width: 1440px) {
   :root {
-    --sidebar-width: var(--sidebar-width-large);
+    --side-panel-width: 300px;
+    --terminal-height: 260px;
   }
 }

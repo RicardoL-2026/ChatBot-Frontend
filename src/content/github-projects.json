@@ -1,0 +1,18 @@
+[
+  {
+    "id": "project-1",
+    "name": "SimuCircuit-Frontend",
+    "description": "Web-based circuit simulator focused on essential basic circuits. It shows a circuits catalog to visualize DC, AC, and transient analysis graphs, and several math theorems",
+    "url": "https://github.com/Richard2203/SimuCircuit-Frontend",
+    "language": "React",
+    "stars": 0
+  },
+  {
+    "id": "project-2",
+    "name": "crypto-frontend",
+    "description": "Web application for tracking real-time cryptocurrency",
+    "url": "https://github.com/Richard2203/crypto-fronted",
+    "language": "React",
+    "stars": 0
+  }
+]
