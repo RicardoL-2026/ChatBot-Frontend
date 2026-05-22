@@ -14,7 +14,8 @@ export class ApiError<T = unknown> extends Error {
 }
   
 async function request<TResponse>(path: string, options: RequestOptions = {} ): Promise<TResponse> {
-    const url = `${import.meta.env.VITE_CHATBOT_API_URL}${path}`;
+    const url_base = "https://chatbot-backend-production-af17.up.railway.app"
+    const url = `${url_base}${path}`;
 
     const isFormData = options.body instanceof FormData;
 
