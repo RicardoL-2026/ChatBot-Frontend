@@ -1,6 +1,6 @@
 # About Me
 
-First things first... My name is **Ricardo Lopez**, I was born and growth in Mexico; and I am currently a Computer Systems Engineering student in my final semesters 🎓....
+First things first... My name is **Ricardo Lopez**, I was born and raised in Mexico, and I am currently a Computer Systems Engineering student in my final semesters 🎓....
 
 Right now, I have nearly three months of professional experience as a Web Developer at PwC  💻. Having progressed beyond the entry-level phase, I am eager to leverage my technical skills and practical knowledge in a forward-thinking organization that values innovation and supports ongoing professional growth.
 
