@@ -127,7 +127,7 @@ export function DinoGame() {
         s.score++
       }
 
-      // Dibujar cubo
+      // Dibujar "cubo"
       // dinoY <= 0 (0 = suelo, negativo = en el aire)
       const dinoDrawY = ground - DINO_HEIGHT + s.dinoY
       ctx.fillStyle = '#93a1a1'

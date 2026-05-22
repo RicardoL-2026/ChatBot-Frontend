@@ -12,12 +12,12 @@ export function EditorArea({ activeFileId }: EditorAreaProps) {
     return (
       <div className={styles.welcome}>
         <p className={styles.welcomeTitle}>Project_Resume</p>
-        <p>Open a file from the Explorer to view your portfolio sections.</p>
+        <p>Open a file from the Explorer to know about my skills and experience.</p>
         <ul>
-          <li>Explorer — browse SRC files</li>
-          <li>Search — find text and jump to a file</li>
-          <li>Source Control — GitHub project cards</li>
-          <li>Run and Debug — dino mini game</li>
+          <li>Explorer — Info about my education, experience, technical skills, soft skills, about me and my hobbies</li>
+          <li>Search — Search for keywords and jump between files</li>
+          <li>Source Control — GitHub projects</li>
+          <li>Run and Debug — dinosaur mini game</li>
         </ul>
       </div>
     )
@@ -35,7 +35,7 @@ export function EditorArea({ activeFileId }: EditorAreaProps) {
       </div>
       <div className={styles.codeArea}>
         <Section />
-        <span className={styles.srOnly}>Editing {path}</span>
+        <span className={styles.srOnly}>Editing... {path}</span>
       </div>
     </div>
   )
